@@ -88,7 +88,7 @@ function App() {
 
   return (
   <>
-      <Router>
+      <Router basename='/PlayText'>
         {/*<Navbar title = "PlayText" aboutText = "About Text Utils" mode= {mode} toggleMode = {toggleMode} theme = {theme} alert = {alert} changeTheme = {changeTheme} style = {style} />*/}
         <Navbar title="PlayText" aboutText="About Text Utils" alert={alert} theme={theme} changeTheme={changeTheme} style={style} />
         <Alert alert={alert} />

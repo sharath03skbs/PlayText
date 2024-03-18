@@ -8,8 +8,7 @@ import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -95,8 +94,8 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3 ">
           <Routes>
+          <Route exact path="/" element={<TextForm heading="Enter the text to analyze" /*mode={mode}*/ theme={theme} showAlert={showAlert} style={style} />}/>
             <Route exact path="/about" element = {<About theme = {theme}/>}/>
-            <Route exact path="/" element={<TextForm heading="Enter the text to analyze" /*mode={mode}*/ theme={theme} showAlert={showAlert} style={style} />}/>
           </Routes>
         </div>
       </Router>
